@@ -76,6 +76,8 @@ class UserAgent
           'Windows'
         elsif application.comment[0] == 'BB10'
           'BlackBerry'
+        elsif application.comment[1] =~ /Android/
+          'Android'
         else
           application.comment[0]
         end

@@ -36,6 +36,8 @@ class UserAgent
           nil
         elsif application.comment[0] =~ /Windows/
           'Windows'
+        elsif application.comment[1] =~ /Android/
+          'Android'
         else
           application.comment[0]
         end
